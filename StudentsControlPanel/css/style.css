@@ -1,0 +1,39 @@
+/* .students-form {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  row-gap: 10px;
+  column-gap: 150px;
+} */
+
+.input {
+  min-width: 500px;
+}
+
+.date-input {
+  min-width: 500px;
+}
+
+th {
+  cursor: pointer;
+}
+
+.filter-titile {
+  font-size: 22px;
+}
+
+.students-filter-form {
+  display: flex;
+  gap: 5px;
+}
+
+.filter-input {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.btn-filter {
+  display: inline;
+}

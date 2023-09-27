@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        createStudentsTable();
+      });
+    </script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <!-- Этап 1. Создайте верстку элементов, которые будут статичны (неизменны).  -->
+    <div class="students-control container pt-3">
+      <h1 class="students-title mb-4">Панель управления студентами</h1>
+      <form class="students-form mb-4" novalidate>
+        <h2 class="form-title mb-3">Добавление студента:</h2>
+        <div class="row g-3 align-items-center mb-2">
+          <div class="col-2">
+            <label for="surname-input" class="col-form-label">Фамилия</label>
+          </div>
+          <div class="col-auto">
+            <input id="surname-input" type="text" class="input form-control" placeholder="Введите фамилию"/>
+            <div id="surname-input-m" class="col-auto invalid-feedback">Не заполнено поле</div>
+          </div>
+        </div>
+        <div class="row g-3 align-items-center mb-2">
+          <div class="col-2">
+            <label for="name-input" class="col-form-label">Имя</label>
+          </div>
+          <div class="col-auto">
+            <input id="name-input" type="text" class="input form-control" placeholder="Введите имя"/>
+            <div id="name-input-m" class="col-auto invalid-feedback">Не заполнено поле</div>
+          </div>
+        </div>
+        <div class="row g-3 align-items-center mb-2">
+          <div class="col-2">
+            <label for="middlename-input" class="col-form-label" >Отчество</label>
+          </div>
+          <div class="col-auto">
+            <input id="middlename-input" type="text" class="input form-control" placeholder="Введите отчество"/>
+            <div id="middlename-input-m" class="col-auto invalid-feedback">Не заполнено поле</div>
+          </div>
+        </div>
+        <div class="row g-3 align-items-center mb-2">
+          <div class="col-2">
+            <label for="birth-input" class="col-form-label">Дата рождения</label>
+          </div>
+          <div class="col-auto">
+            <input id="birth-input" type="date" class="date-input form-control" min="1970-01-01" value="1970-01-01"/>
+            <div id="birth-input-m" class="col-auto invalid-feedback min-message">Не заполнено поле</div>
+          </div>
+        </div>
+        <div class="row g-3 align-items-center mb-2">
+          <div class="col-2">
+            <label for="study-input" class="col-form-label">Год зачисления</label>
+          </div>
+          <div class="col-auto">
+            <input id="study-input" type="number" class="date-input form-control" min="2000" placeholder="Введите год зачисления (не ранее 2000)"/>
+            <div id="study-input-m" class="col-auto invalid-feedback min-message">Не заполнено поле</div>
+          </div>
+        </div>
+        <div class="row g-3 align-items-center mb-4">
+          <div class="col-2">
+            <label for="faculty-input" class="col-form-label">Факультет</label>
+          </div>
+          <div class="col-auto">
+            <select id="faculty-input" type="text" class="input form-select">
+              <option value="" disabled selected>Не выбрано</option>
+              <option value="Информатика и вычислительная техника">Информатика и вычислительная техника</option>
+              <option value="Ифнормационные технологии и прикладная математика">Ифнормационные технологии и прикладная математика</option>
+              <option value="Радиотехника">Радиотехника</option>
+              <option value="Экономика и управление">Экономика и управление</option>
+              <option value="Авиастроение">Авиастроение</option>
+              <option value="Системный анализ и управление">Системный анализ и управление</option>
+            </select>
+            <div id="faculty-input-m" class="col-auto invalid-feedback">Не выбран факультет</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить студента</button>
+      </form>
+      <div class="students-filter mb-3">
+        <h2 class="filter-titile">Фильтр:</h2>
+        <form class="students-filter-form" novalidate>
+          <input id="surname-filter" type="text" class="filter-input" placeholder="Фамилия">
+          <input id="name-filter" type="text" class="filter-input" placeholder="Имя">
+          <input id="middlename-filter" type="text" class="filter-input" placeholder="Отчество">
+          <input id="birth-filter" type="date" class="filter-input" >
+          <input id="study-filter" type="number" class="filter-input" placeholder="Год зачисления">
+          <select id="faculty-filter" type="text" class="filter-input">
+            <option value="" disabled selected>Не выбрано</option>
+            <option value="Информатика и вычислительная техника">Информатика и вычислительная техника</option>
+            <option value="Ифнормационные технологии и прикладная математика">Ифнормационные технологии и прикладная математика</option>
+            <option value="Радиотехника">Радиотехника</option>
+            <option value="Экономика и управление">Экономика и управление</option>
+            <option value="Авиастроение">Авиастроение</option>
+            <option value="Системный анализ и управление">Системный анализ и управление</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-filter">Применить</button>
+          <button type="reset" id="filter-clear" class="btn btn-danger btn-filter">Очистить</button>
+        </form>
+      </div>
+      <div class="students-table pb-4">
+        <h2 class="table-title">Список студентов</h2>
+      </div>
+    </div>
+  </body>
+</html>

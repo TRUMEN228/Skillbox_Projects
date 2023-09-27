@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Medium"),
+    url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+  font-display: swap;
+}
+
+body {
+  background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+.pair-card-game {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.game-form {
+  display: inline-block;
+}
+
+.game-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: darkslategrey;
+}
+
+.game-input {
+  height: 25px;
+  min-width: 400px;
+  margin-bottom: 35px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  background-color: limegreen;
+  cursor: pointer;
+
+  width: 110px;
+  height: 37px;
+  padding: 5px;
+  border: 1px solid #000;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn:disabled {
+  background-color: darkgreen;
+  color: darkgray;
+}
+
+.stop-btn {
+  margin-right: 15px;
+  cursor: default;
+  background-color: red;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.stop-btn:disabled {
+  background-color: darkred;
+}
+
+.game-timer-block,
+.game-timer-text,
+.game-timer-time {
+  display: inline-block;
+}
+
+.game-timer-text {
+  margin-right: 10px;
+  font-size: 20px;
+  color: steelblue;
+}
+
+.game-timer-time {
+  color: steelblue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-list {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+}
+
+.default-card-state {
+  padding: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid #000;
+  background-image: url("../img/card-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.default-card-state:hover {
+  border: 2px solid orange;
+}
+
+.active-card-state {
+  border: 2px solid steelblue;
+  background-color: lightskyblue;
+  background-image: none;
+  text-align: center;
+}
+
+.active-card-state:hover {
+  cursor: default;
+  border: 2px solid steelblue;
+  background-color: lightskyblue;
+  text-align: center;
+}
+
+.right-card-state {
+  cursor: default;
+  border: 2px solid green;
+  background-color: lawngreen;
+  background-image: none;
+  text-align: center;
+}
+
+.right-card-state:hover {
+  cursor: default;
+  border: 2px solid green;
+  background-color: lawngreen;
+  text-align: center;
+}
+
+.wrong-card-state {
+  border: 2px solid darkred;
+  background-color: indianred;
+  background-image: none;
+  text-align: center;
+}
+
+.wrong-card-state:hover {
+  cursor: default;
+  border: 2px solid darkred;
+  background-color: indianred;
+  text-align: center;
+}
+
+.hidden-card-state {
+  visibility: hidden;
+}

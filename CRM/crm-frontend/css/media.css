@@ -1,0 +1,115 @@
+@media (max-width: 992px) {
+  .thead-cell-3, .tbody-cell-3,
+  .thead-cell-4, .tbody-cell-4 {
+    width: 120px;
+  }
+
+  .thead-cell-5, .tbody-cell-5 {
+    max-width: 160px;
+  }
+
+  .tbody-cell, .thead-cell {
+    padding: 5px 10px;
+  }
+
+  .tbody-cell__date-container {
+    gap: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 950px) {
+  .tbody-cell__actions-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 7px;
+  }
+}
+
+@media (max-width: 860px) {
+  .thead-cell-3, .tbody-cell-3,
+  .thead-cell-4, .tbody-cell-4 {
+    width: 95px;
+  }
+}
+
+@media (max-width: 810px) {
+  .thead-cell-2, .tbody-cell-2 {
+    width: 186px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-window {
+    width: 300px;
+    padding: 24px 15px 29px 15px;
+  }
+
+  .modal-close-btn {
+    top: 8px;
+    right: 8px;
+  }
+
+  #crm-main {
+    width: 100%;
+  }
+
+  .header-request-field {
+    width: 215px;
+  }
+
+  .table__container {
+    min-width: 715px;
+    max-width: 100%;
+  }
+
+  .edit-form__title {
+    margin-bottom: 2px;
+  }
+
+  .edit-form__title-id {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .edit-form__contacts-container, .add-form__contacts-container {
+    width: 300px;
+    transform: translateX(-15px);
+  }
+
+  .contact-input__select {
+    width: 110px;
+  }
+}
+
+@media (max-width: 370px) {
+  .app-header {
+    padding: 8px 0;
+  }
+
+  #crm-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-link {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .header-request-field {
+    display: none;
+  }
+
+  #crm-main {
+    padding-top: 30px;
+  }
+
+  .main-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+}

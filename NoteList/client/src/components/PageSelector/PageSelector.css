@@ -1,0 +1,42 @@
+.page-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.page-selector__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.page-selector__button:disabled {
+  opacity: 0;
+}
+
+.page-selector__page {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.loader-add {
+  display: flex;
+  justify-content: space-between;
+  width: 11px;
+  height: 3px;
+}
+
+.loader-item-add {
+  width: 3px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: relative;
+  bottom: 0;
+}

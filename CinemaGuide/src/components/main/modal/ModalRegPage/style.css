@@ -1,0 +1,30 @@
+.modal-reg__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-reg__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.modal-reg__form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-reg__btn {
+  margin-top: 12px;
+}
+
+.modal-reg__auth-btn {
+  font: inherit;
+  font-weight: 700;
+}

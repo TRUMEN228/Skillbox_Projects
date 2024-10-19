@@ -1,0 +1,11 @@
+.account-favorites__container {
+  width: 100%;
+}
+
+.account-favorites__empty {
+  margin: 0 auto;
+  padding: 60px 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+}

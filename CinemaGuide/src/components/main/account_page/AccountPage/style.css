@@ -1,0 +1,47 @@
+.account__container {
+  display: flex;
+  padding-top: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.account__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+.account__page-links {
+  display: flex;
+  margin-bottom: 64px;
+  gap: 64px;
+}
+
+.account__link {
+  position: relative;
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  gap: 8px;
+}
+
+.account__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  background-color: #dc5dfc;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.account__link.choosen::after {
+  opacity: 1;
+}

@@ -1,0 +1,35 @@
+.rating__container {
+  width: fit-content;
+  height: 32px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 16px;
+}
+
+.rating__container svg {
+  margin-top: -1px;
+}
+
+.rating__number {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cool-film {
+  background-color: #a59400;
+}
+
+.good-film {
+  background-color: #308e21;
+}
+
+.average-film {
+  background-color: #777;
+}
+
+.below-average-film {
+  background-color: #c82020;
+}

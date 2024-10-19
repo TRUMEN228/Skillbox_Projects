@@ -1,0 +1,422 @@
+@media (max-width: 375px) {
+  body {
+    overflow: auto;
+  }
+
+  #root {
+    overflow: auto;
+  }
+
+  .general-container {
+    overflow: auto;
+  }
+
+  /* ! general */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* ! header */
+  .header {
+    height: 56px;
+  }
+
+  .header__container {
+    padding: 19px 0;
+    height: 56px;
+  }
+
+  .header__logo-link {
+    width: 136px;
+    height: 18px;
+  }
+
+  .header-input__container {
+    width: 100%;
+    height: 56px;
+    display: flex;
+  }
+
+  .search__container {
+    width: 100%;
+    padding: 24px 20px;
+    overflow-x: auto;
+    border-radius: 8px;
+    justify-content: unset;
+  }
+
+  .search__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .search__list {
+    width: unset;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .search__item {
+    width: 220px;
+    height: 330px;
+  }
+
+  .search__item:hover {
+    border: none;
+  }
+
+  .search__item-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .search__item-img {
+    width: 158px;
+    height: 206px;
+  }
+
+  .search__item-top {
+    flex-wrap: wrap;
+  }
+
+  .header__nav-container {
+    display: flex;
+  }
+
+  .header__nav {
+    margin-right: 22px;
+  }
+
+  .header__nav-list {
+    gap: 22px;
+  }
+
+  .header__nav-item {
+    height: 20px;
+  }
+
+  .header__nav-item a,
+  .header__nav-item svg {
+    display: inline-block;
+    display: flex;
+    height: 100%;
+  }
+
+  .header__nav-item::after,
+  .header__account-btn::after {
+    height: 0;
+  }
+
+  .header__account-btn {
+    display: flex;
+    height: 21px;
+    font-size: initial;
+  }
+
+  /* ! main */
+  .main {
+    min-height: unset;
+    overflow: auto;
+  }
+
+  /* ! modal */
+  .modal__close-btn {
+    border: none;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+  }
+
+  .trailer__close-btn {
+    width: 32px !important;
+    height: 32px !important;
+    top: 8px !important;
+    right: 8px !important;
+  }
+
+  /* ! main_page */
+  .main-page__container {
+    overflow: auto;
+  }
+
+  .random-film__container {
+    padding: 0;
+    height: 260px;
+  }
+
+  .random-film__container::before {
+    background: none;
+  }
+
+  .random-film__info {
+    padding: 24px 0;
+  }
+
+  .random-film__category-info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .random-film__head {
+    margin-bottom: 32px;
+  }
+
+  .random-film__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .random-film__descr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .random-film__trailer-btn {
+    width: 100%;
+  }
+
+  .random-film__control {
+    flex-wrap: wrap;
+  }
+
+  .random-film__control-bottom {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .random-film__about-btn {
+    padding: 16px 35px;
+  }
+
+  .top-films__container {
+    padding: 32px 0;
+    overflow: auto;
+  }
+
+  .top-films__title {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .top-films__list-container {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    padding: 40px 20px;
+  }
+
+  .top-films__list-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .top-films__list {
+    flex-wrap: nowrap;
+  }
+
+  /* ! film_page */
+  .film-header__container {
+    padding: 0;
+    height: 260px;
+  }
+
+  .film-header__container::before {
+    background: none;
+  }
+
+  .film-header__info {
+    padding: 24px 0;
+  }
+
+  .film-header__category-info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .film-header__head {
+    margin-bottom: 32px;
+  }
+
+  .film-header__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .film-header__descr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .film-header__control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .film-header__trailer-btn {
+    width: 251px;
+  }
+
+  .film-header__favorite-btn {
+    padding: 19px 24px;
+  }
+
+  .film-info__container {
+    padding: 32px 0;
+  }
+
+  .film-info__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .film-info__table {
+    row-gap: 12px;
+  }
+
+  .film-info__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .film-info__row-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* ! genre_page */
+  .genres-page__container,
+  .genre-page__container {
+    padding-top: 24px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .genres-page__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .genre-page__title {
+    margin-bottom: 40px !important;
+  }
+
+  .genre-page__title a {
+    gap: 20px !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .genres-page__list,
+  .genre-page__list {
+    flex-direction: column;
+    gap: 24px !important;
+  }
+
+  .genres-page__item {
+    width: 100%;
+  }
+
+  .genre-page__item {
+    width: 100%;
+    height: 502px;
+  }
+
+  .genre-page__btn {
+    width: 100%;
+  }
+
+  /* ! account_page */
+  .account__container {
+    padding-top: 24px;
+    padding-bottom: 148px;
+  }
+
+  .account__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .account__page-links {
+    margin-bottom: 0;
+    gap: 24px;
+  }
+
+  .account-favorites__container {
+    display: flex;
+    overflow-x: auto;
+    padding: 40px 20px;
+  }
+
+  .account-favorites__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .account-favorites__list {
+    width: unset;
+    flex-wrap: nowrap;
+  }
+
+  .account-settings__container {
+    margin-top: 40px;
+  }
+
+  .account-settings__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .account-settings__name-container,
+  .account-settings__email-container {
+    margin-bottom: 40px;
+    height: fit-content;
+    align-items: flex-start;
+  }
+
+  .account-settings__content-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .account-settings__content-data {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .account-settings__btn {
+    width: 100%;
+  }
+
+  /* ! footer */
+  .footer__container {
+    padding-top: 24px;
+    padding-bottom: 36px;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+  }
+
+  .footer-copyright__container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-copyright__copyright {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .footer-socials__item {
+    width: 24px;
+    height: 24px;
+  }
+}

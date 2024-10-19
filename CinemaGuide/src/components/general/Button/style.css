@@ -1,0 +1,64 @@
+.button {
+  display: flex;
+  cursor: pointer;
+  height: 56px;
+  padding: 16px 48px;
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary {
+  color: #fff;
+  background-color: #6a5dc2;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primary:hover, .primary:focus {
+  background-color: #8577e1;
+}
+
+.primary:active, .primary:disabled {
+  background-color: #d6d2f1;
+}
+
+.secondary {
+  color: #fff;
+  background-color: #393b3c;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.secondary svg path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.secondary:hover, .secondary:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+
+.secondary:hover svg path, .secondary:focus svg path {
+  fill: #000;
+}
+
+.secondary:active, .secondary:disabled {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #747474;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.favorite svg {
+  fill: #b4a9ff;
+}
+
+.favorite__btn, .update__btn {
+  padding: 17px 24px;
+}
+

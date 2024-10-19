@@ -1,0 +1,22 @@
+.modal-auth__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-auth__form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-auth__btn {
+  margin-top: 12px;
+}
+
+.modal-auth__reg-btn {
+  font: inherit;
+  font-weight: 700;
+}

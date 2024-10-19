@@ -1,0 +1,7 @@
+.genres-page__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 64px;
+}

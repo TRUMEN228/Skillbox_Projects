@@ -1,0 +1,9 @@
+.genre-page__list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 64px !important;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 64px;
+}

@@ -1,0 +1,23 @@
+.account-favorites__item {
+  position: relative;
+  width: 224px;
+  height: 336px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.account-favorites__item:hover {
+  border-color: #fff;
+}
+
+.account-favorites__item:hover .favorite-remove__btn {
+  visibility: visible;
+}
+
+.account-favorites__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

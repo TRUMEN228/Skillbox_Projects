@@ -1,0 +1,22 @@
+.header__container {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-item::after, .header__account-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  background-color: #dc5dfc;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__nav-item.choosen::after, .header__account-btn.choosen::after {
+  opacity: 1;
+}

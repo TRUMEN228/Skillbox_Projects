@@ -1,0 +1,35 @@
+.film-info__table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 24px;
+}
+
+.film-info__row {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-column-gap: 8px;
+  align-items: center;
+}
+
+.film-info__row-left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+  align-items: center;
+}
+
+.film-info__row-title {
+  color: #fff;
+}
+
+.film-info__row-dots {
+  height: 18px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+.film-info__row-value {
+  color: #fff;
+}
+

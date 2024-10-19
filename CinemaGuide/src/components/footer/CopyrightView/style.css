@@ -1,0 +1,14 @@
+.footer-copyright__container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-copyright__franchise {
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-copyright__rights {
+  color: rgba(255, 255, 255, 0.7);
+}

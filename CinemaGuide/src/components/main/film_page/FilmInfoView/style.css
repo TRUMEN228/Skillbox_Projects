@@ -1,0 +1,13 @@
+.film-info__container {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.film-info__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+}

@@ -1,0 +1,10 @@
+.header__logo-link {
+  display: block;
+  width: 240px;
+  height: 32px;
+}
+
+.header__logo {
+  width: 100%;
+  height: 100%;
+}

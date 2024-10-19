@@ -1,0 +1,37 @@
+.rating-small__container {
+  width: fit-content;
+  height: 20px;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 16px;
+}
+
+.rating-small__container svg {
+  margin-top: -1px;
+}
+
+.rating-small__number {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cool-film {
+  background-color: #a59400;
+}
+
+.good-film {
+  background-color: #308e21;
+}
+
+.average-film {
+  background-color: #777;
+}
+
+.below-average-film {
+  background-color: #c82020;
+}

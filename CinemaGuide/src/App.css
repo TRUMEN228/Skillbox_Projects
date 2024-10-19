@@ -1,0 +1,12 @@
+.general-container {
+  background-color: #0a0b0b;
+}
+
+.header {
+  height: 96px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  min-height: 788px;
+}

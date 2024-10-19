@@ -1,0 +1,7 @@
+.account-favorites__list {
+  display: flex;
+  width: 100%;
+  column-gap: 40px;
+  row-gap: 64px;
+  flex-wrap: wrap;
+}

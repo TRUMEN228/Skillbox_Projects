@@ -1,0 +1,13 @@
+.genres-page__container {
+  padding-top: 64px;
+  padding-bottom: 160px;
+}
+
+.genres-page__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #fff;
+}

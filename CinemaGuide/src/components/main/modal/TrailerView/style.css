@@ -1,0 +1,33 @@
+.trailer__container {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.trailer__video {
+  width: 100%;
+  height: 100%;
+}
+
+.trailer__controls {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.trailer__info {
+  display: flex;
+  position: absolute;
+  padding: 24px 40px;
+  width: 920px;
+  height: 80px;
+  bottom: 24px;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  background-color: rgba(10, 11, 11, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
